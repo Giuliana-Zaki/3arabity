@@ -1,0 +1,31 @@
+
+// $city = mysqli_fetch_row($data);
+// echo $city[1] ;
+// $city = mysqli_fetch_row($data);
+// echo $city[1] ;
+// $city=mysqli_fetch_assoc($data);
+// echo $city["name"];
+
+
+
+
+
+//   $tmp_id=$id_image["tmp_name"];
+//   $id_location="img/customers_id/";
+//   $sql ="UPDATE customers SET name='$name',image='$filename',phone='$phone',address='$address',email='$email',bdate='$bdate',id_number='$id_number',id_image='$id_image',city_id='$city_id' WHERE id='$id'";
+// }
+// $sql ="UPDATE customers SET name='$name',image='$image',phone='$phone',address='$address',email='$email',
+// bdate='$bdate',id_number='$id_number',id_image='$id_image',city_id='$city_id' WHERE id='$id'";
+
+
+
+
+if ($filename=="") {
+  $location="img/cities/";
+  $filename="default.png";
+
+  cities_new($_POST["name"],);
+}else {
+  cities_new($_POST["name"],$filename);
+
+}
